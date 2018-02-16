@@ -8,26 +8,24 @@ $(document).ready(function() {
     let perPage = $('#per-page').val();
     let newSearch = promise(name, symptom, perPage);
     $('#result').empty();
-
+    // debugger;
     newSearch.then(function(response) {
       let body = JSON.parse(response);
-      for (let i = 0; i < body.data.practices.length; i++) {
-      $('#result').append("<h2>" + body.data.practices[i].name + "</h2>" +
-                          "<br>" +
-                          "<p>" + "<b>" + "Street Address:" + "</b>" + body.data.visit_address[i].street + "</p>" +
-                          "<p>" + "<b>" + "City/State:" + "</b>" + body.data.visit_address[i].city + "," + body.data.visit_address[i].state + "</p>" +
-                          "<p>" + "<b>" + "Phone:" + "</b>" + body.data.phones[i].number + "</p>" +
-                          "<p>" + "<b>" + "Accepting New Patients:" + "</b>" + body.data.practices[i].accepts_new_patients + "</p>" +
+      for (let i = 0; i < body.data.length; i++) {
+      $('#result').append('<h2>' + body.data[i].profile.first_name +
+                          ' ' + body.data[i].profile.last_name + '</h2>' +
+                          '<img src=' + body.data[i].profile.image_url + '>' +
+                          '<p>' + body.data[i].practices.visit_address + '</p>'
                         );
-      if (body.data.practices.length === null) {
+
+      if (body.data.length === null) {
          $('#result').append("<p><em> No results found </em></p>" + "<hr>");
        } else {
-           console.log(No results found);
+           console.log("No results found");
        }
     }
     }, function (error) {
       $('.showErrors').text('There was an error: ${error.message}');
-
 
   });
 });
