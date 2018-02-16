@@ -1,0 +1,23 @@
+{
+  "name": "betterDocAPI",
+  "description": "An application that allows a user to search for doctors based on their symptoms",
+  "main": "index.js",
+  "authors": [
+    "Ross Fletcher <rtbfletch@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0",
+    "moment": "^2.20.1"
+  }
+}
