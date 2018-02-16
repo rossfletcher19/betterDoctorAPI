@@ -15,8 +15,8 @@ $(document).ready(function() {
       for (let i = 0; i < body.data.length; i++) {
       $('#result').append('<h2>' + body.data[i].profile.first_name + ' ' + body.data[i].profile.last_name + '</h2>' +
                           '<img src=' + body.data[i].profile.image_url + '>' +
-                          '<li>' + body.data[i].practices[i].visit_address.street + '</li>' +
-                          '<li>' + body.data[i].practices[i].visit_address.city + ', ' + body.data[i].practices[i].visit_address.state + " " + body.data[i].practices[i].visit_address.zip + '</li>'
+                          '<li>' + body.data[i].practices[0].visit_address.street + '</li>' +
+                          '<li>' + body.data[i].practices[0].visit_address.city + ', ' + body.data[i].practices[0].visit_address.state + " " + body.data[i].practices[0].visit_address.zip + '</li>'
                         );
 
       // if (body.data.length === 0) {
