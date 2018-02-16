@@ -1,1 +1,11 @@
-
+.result {
+  height: 1500px;
+    overflow: auto;
+    height: 1500px; /*your fixed height*/
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; /*3 in those rules is just placeholder -- can be anything*/
+}
+.result li {
+    display: inline-block; /*necessary*/
+}

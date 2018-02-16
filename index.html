@@ -13,17 +13,22 @@
       <h1>Enter your search terms:</h1>
       <form id="doctorSearchform">
         <label for="per-page">Enter max # results:</label>
-        <input id="per-page" value="10" type="number">
+        <input id="per-page" value="30" type="number">
         <br>
         <label for="symptom">Enter symptom:</label>
         <input id="symptom" value="pain" type="text">
         <br>
+        <label for="location">Enter location(st-city):</label>
+        <input id="location" value="or-portland" type="text">
+        <br>
         <label for="name">Enter Doctor Name</label>
-        <input id="name" value="Smith" type="text">
+        <input id="name" value="smith" type="text">
         <br>
         <button type="submit">Search</button>
       </form>
       <ul id="result">
+      </ul>
+      <ul class="showErrors">
       </ul>
       <button class="btn btn-secondary" onclick="myFunction()">Reload page</button>
    </div>
