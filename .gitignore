@@ -2,6 +2,6 @@ bower_components/
 build/
 node_modules/
 tmp/
-
+.env
 ## System Files ##
 .DS_Store
