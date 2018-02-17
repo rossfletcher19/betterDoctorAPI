@@ -17,13 +17,17 @@ $(document).ready(function() {
                             '<img src=' + body.data[i].profile.image_url + '>' +
                             '<li>' + body.data[i].practices[0].visit_address.street + '</li>' +
                             '<li>' + body.data[i].practices[0].visit_address.city + ', ' + body.data[i].practices[0].visit_address.state + " " + body.data[i].practices[0].visit_address.zip + '</li>' +
-                            '<li>' + body.data[i].specialties[0].name + '</li>'
+                            '<li>' + body.data[i].specialties[0].name + '</li>' +
+                            '<li>' + '<b>' + 'Phone # : ' + '</b>' + body.data[i].practices[0].phones[0].number + "</li>"
+
+                            // for (let j = 0; j < body.data[i].practices[0].phones.length; j++) {
+                            //       $('#result').append('<li>' + '<b>' + 'Phone # :' + '</b> ' + ' ' + body.data[i].practices[0].phones[j].number + ' ' +
+                            //                                     '<b>' + 'Type : ' + '</b>' + body.data[i].practices[0].phones[j].type + "</li>"
+                            //       );
+                            // }
         );
-                        for (let j = 0; j < body.data[i].practices[0].phones.length; j++) {
-                              $('#result').append('<li>' + '<b>' + 'Phone # :' + '</b> ' + ' ' + body.data[i].practices[0].phones[j].number + ' ' +
-                                                            '<b>' + 'Type : ' + '</b>' + body.data[i].practices[0].phones[j].type + "</li>"
-                              );
-                        }
+
+
 
       // if (body.data.length === 0) {
       //    $('#result').append("<p><em> No results found </em></p>" + "<hr>");
