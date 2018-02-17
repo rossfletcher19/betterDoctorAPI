@@ -20,12 +20,14 @@ $(document).ready(function() {
                             '<li>' + body.data[i].specialties[0].name + '</li>' +
                             '<li>' + '<b>' + 'Phone # : ' + '</b>' + body.data[i].practices[0].phones[0].number + "</li>"
 
-                            // for (let j = 0; j < body.data[i].practices[0].phones.length; j++) {
-                            //       $('#result').append('<li>' + '<b>' + 'Phone # :' + '</b> ' + ' ' + body.data[i].practices[0].phones[j].number + ' ' +
-                            //                                     '<b>' + 'Type : ' + '</b>' + body.data[i].practices[0].phones[j].type + "</li>"
-                            //       );
-                            // }
+
         );
+
+        if (body.data[i].practices[0].website === undefined) {
+          $('#result').append('<li>' + "No website listed" + '</li>');
+        } else {
+          $('#result').append('<li>' + body.data[i].practices[0].website + '</li>');
+        }
 
 
 
