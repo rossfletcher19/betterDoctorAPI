@@ -1,37 +1,75 @@
-# _{Application Name}_
+# _A Better Doctor API_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A Better Doctor API that allows a user to enter search params and get results based on those params_
 
-#### By _**{List of contributors}**_
+#### By _**Ross Fletcher**_
 
-## Description
+## _Planning_
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+## Specs
+
+| Behavior  | input  | output  |
+|---|---|---|
+| A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.  | or-portland  | Portland Doctors  |
+| A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query | Smith  | Doctors names containing "Smith"  |
+| If the query response includes any doctors, the following information should be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients  | 30 - pain - or-portland - Smith   | 30 results, for pain, in Portland, named Smith  |
+| If the API call results in an error (any message not a 200 OK), the application should return a notification that states what the error is.  | 30 - pain - AOEUA - Smith  | 'There was an error: ${error.message}'  |
+| If the query response doesn't include any doctors (for instance, if no doctors meet the search criteria), the application should return a notification that states that no doctors meet the criteria.  | 30 - broken heart - or-portland - Smith  | "no results found"  |
+|   |   |   |
+|   |   |   |
+
+## Configuration/dependencies
+  * NodeJS with full gulp and bower tasks, with Karma testing.
+  * Dependencies are declared in package.json and bower.json. Run npm install and bower install.
+
+
+
+## Integration
+  * Initial boilerplate project folder with all dependencies
+  * script files working together with import and export
+  * Testing functions for with Karma before front end integration.
+  * Integrate features and functions into front end.
+
+## UX/UI
+  * Include and modify bootstrap.
+  * Develop custom style
+
+## Polish
+  * Refactor
+  * Delete unused
+  * Make README awesome
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Clone this repo. <br />
+`$ git clone https://github.com/rossfletcher19/betterDoctorAPI.git`
+* cd into the cloned repo and run the following command from your terminal. <br/>
+`$ npm install && bower install`
+* Serve a production version of the web app by running this gulp task <br/>
+`gulp serve --prod`
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_None Known._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _jQuery-3.2.1_
+* _npm, gulp, bower_
+* _Karma testing_
+* _BetterDoctor API_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Copyright (c) 2018 **_Ross Fletcher_**
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
