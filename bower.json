@@ -1,12 +1,12 @@
 {
-  "name": "betterDocAPI",
+  "name": "betterdoc",
   "description": "An application that allows a user to search for doctors based on their symptoms",
   "main": "index.js",
   "authors": [
     "Ross Fletcher <rtbfletch@outlook.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/rossfletcher19/betterDoctorAPI",
   "private": true,
   "ignore": [
     "**/.*",

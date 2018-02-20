@@ -1,10 +1,19 @@
-/* #result {
-    overflow: auto;
-    height: 2000px;
-    -webkit-column-count: 3;
-       -moz-column-count: 3;
-            column-count: 3;
+ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
 }
-#result li {
-    display: inline-block;
-} */
+
+.panel {
+  /*padding: 20px;*/
+  margin-top: 25px;
+}
+
+.results {
+  display: none;
+}
+
+
+
+
+/*betterDocPurp #b3369a*/

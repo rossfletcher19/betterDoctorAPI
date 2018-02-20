@@ -10,27 +10,54 @@
   <body>
 
     <div class="container">
-      <h1>Enter your search terms:</h1>
-      <form id="doctorSearchform">
-        <label for="per-page">Enter max # results:</label>
-        <input id="per-page" value="30" type="number">
-        <br>
-        <label for="symptom">Enter symptom:</label>
-        <input id="symptom" value="pain" type="text">
-        <br>
-        <label for="location">Enter location(st-city):</label>
-        <input id="location" value="or-portland" type="text">
-        <br>
-        <label for="name">Enter Doctor Name</label>
-        <input id="name" value="smith" type="text">
-        <br>
-        <button type="submit">Search</button>
-      </form>
-      <ul id="result">
-      </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Welcome to Find a Doctor!</h2>
+            </div>
+            <div class="panel-body">
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Enter your search terms:</h2>
+            </div>
+            <div class="panel-body">
+              <form id="doctorSearchform">
+                <label for="per-page">Enter max # results:</label>
+                <input id="per-page" value="30" type="number">
+                <br>
+                <label for="symptom">Enter symptom:</label>
+                <input id="symptom" value="pain" type="text">
+                <br>
+                <label for="location">Enter location(st-city):</label>
+                <input id="location" value="or-portland" type="text">
+                <br>
+                <label for="name">Enter Doctor Name</label>
+                <input id="name" value="smith" type="text">
+                <br>
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home panel panel-default">
+        <img src="../img/find.png">
+      </div>
+      <div class="results panel panel-default">
+        <ul id="result">
+
+        </ul>
+      </div>
       <ul class="showErrors">
       </ul>
-      <button class="btn btn-secondary" onclick="myFunction()">Reload page</button>
+      <button class="btn btn-primary" onclick="myFunction()">Reload page</button>
    </div>
 
 
