@@ -45,9 +45,11 @@
 
 * Clone this repo. <br />
 `$ git clone https://github.com/rossfletcher19/betterDoctorAPI.git`
-* cd into the cloned repo and run the following command from your terminal. <br/>
+* cd into the cloned repo and create a .env file in the top level of the directory, in the .env file place the following code with your betterDoctorAPI key and save: <br/>
+`exports.apiKey = "apiKey";`
+* then in the cloned repo run the following command from your terminal: <br/>
 `$ npm install && bower install`
-* Serve a production version of the web app by running this gulp task <br/>
+* Serve a production version of the web app by running this gulp task: <br/>
 `gulp serve --prod`
 
 ## Known Bugs
