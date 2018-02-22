@@ -1,18 +1,63 @@
+body {
+  background-image: url('/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.panel {
+  margin-top: 25px;
+  background: rgba(46, 25, 66, 0.5);
+}
+
+.panel .panel-heading {
+  background: rgba(46, 25, 66, 0.6);
+}
+
+.formText {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 ul {
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
 }
 
-.panel {
-  /*padding: 20px;*/
-  margin-top: 25px;
+li {
+  color: #ced5e0;
+}
+
+h2 {
+  color: #ced5e0;
 }
 
 .results {
   display: none;
+  padding-top: 20px;
 }
 
+.homeImg {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.docImg {
+  float: right;
+  height: 25%;
+  width: 25%;
+}
+
+.noResults {
+  display: block;
+  margin: auto;
+}
 
 
 
