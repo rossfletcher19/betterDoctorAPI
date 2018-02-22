@@ -33,6 +33,14 @@ $(document).ready(function() {
             $('#result').append('<li>' + body.data[i].practices[0].website + '</li>');
           }
 
+          if (body.data[i].practices[0].accepts_new_patients === true) {
+            $('#result').append('<li>' + "Accepting new patients." + '</li>');
+          } else if (body.data[i].practices[0].accepts_new_patients === false) {
+            $('#result').append('<li>' + "Currently not accepting new patients." + '</li>');
+          } else {
+
+          }
+
 
 
         }

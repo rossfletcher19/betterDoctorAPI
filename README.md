@@ -43,7 +43,7 @@
 ## Setup/Installation Requirements
 
 
-* Clone this repo. <br />
+* Clone this repo. <br/>
 `$ git clone https://github.com/rossfletcher19/betterDoctorAPI.git`
 * cd into the cloned repo and create a .env file in the top level of the directory, in the .env file place the following code with your betterDoctorAPI key and save: <br/>
 `exports.apiKey = "apiKey";`
