@@ -26,6 +26,7 @@ ul {
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
+  overflow: auto;
 }
 
 li {
@@ -45,7 +46,6 @@ h2 {
   height: 40%;
   width: 40%;
   display: block;
-  margin: auto;
 }
 
 .docImg {
@@ -58,7 +58,3 @@ h2 {
   display: block;
   margin: auto;
 }
-
-
-
-/*betterDocPurp #b3369a*/
