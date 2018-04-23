@@ -1,10 +1,13 @@
-# _A Better Doctor API_
+# _findADoc web-app_
 
-#### _A Better Doctor API that allows a user to enter search params and get results based on those params_
+#### _A web-app that allows a user to enter search params and get results based on those params_
 
 #### By _**Ross Fletcher**_
 
 ## _Planning_
+
+## _animalTracks_
+![home-screen](https://github.com/rossfletcher19/findADoc-webapp/blob/master/img/appSS1.jpg)
 
 ## Specs
 
@@ -21,8 +24,6 @@
 ## Configuration/dependencies
   * NodeJS with full gulp and bower tasks, with Karma testing.
   * Dependencies are declared in package.json and bower.json. Run npm install and bower install.
-
-
 
 ## Integration
   * Initial boilerplate project folder with all dependencies
@@ -41,7 +42,6 @@
 
 
 ## Setup/Installation Requirements
-
 
 * Clone this repo. <br/>
 `$ git clone https://github.com/rossfletcher19/betterDoctorAPI.git`
