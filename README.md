@@ -6,7 +6,6 @@
 
 ## _Planning_
 
-## _animalTracks_
 ![home-screen](https://github.com/rossfletcher19/findADoc-webapp/blob/master/img/appSS1.jpg)
 
 ## Specs
