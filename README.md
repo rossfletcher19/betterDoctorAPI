@@ -4,9 +4,9 @@
 
 #### By _**Ross Fletcher**_
 
-## _Planning_
-
 ![home-screen](https://github.com/rossfletcher19/findADoc-webapp/blob/master/img/appSS1.jpg)
+
+## _Planning_
 
 ## Specs
 
