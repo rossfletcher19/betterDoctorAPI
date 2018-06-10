@@ -4,7 +4,7 @@
 
 #### By _**Ross Fletcher**_
 
-![home-screen](https://github.com/rossfletcher19/findADoc-webapp/blob/master/img/appSS1new.gif)
+![home-screen](https://github.com/rossfletcher19/findADoc-webapp/blob/master/img/appSS2.jpeg)
 
 ## _Planning_
 
