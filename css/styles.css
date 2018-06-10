@@ -66,3 +66,7 @@ h2 {
   display: block;
   margin: auto;
 }
+
+label.formText {
+  width: 175px;
+}
