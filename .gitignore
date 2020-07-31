@@ -5,3 +5,4 @@ tmp/
 .env
 ## System Files ##
 .DS_Store
+package-lock.json
